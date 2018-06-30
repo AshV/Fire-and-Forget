@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -16,6 +17,7 @@ namespace Fire_and_Forget.Console
             int z = x + y;
             Thread.Sleep(5000);
             WriteLine("Add Result {0}", z);
+            File.Create("File.txt");
         }
         static void Main(string[] args)
         {
