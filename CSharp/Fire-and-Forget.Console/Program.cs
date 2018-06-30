@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
 
@@ -13,6 +14,7 @@ namespace Fire_and_Forget.Console
         public static void Add(int x, int y)
         {
             int z = x + y;
+            Thread.Sleep(5000);
             WriteLine("Add Result {0}", z);
         }
         static void Main(string[] args)
